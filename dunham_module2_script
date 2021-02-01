@@ -1,0 +1,91 @@
+Welcome to Ubuntu 20.04.1 LTS (GNU/Linux 4.4.0-19041-Microsoft x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Mon Feb  1 13:15:12 MST 2021
+
+  System load:            0.52
+  Usage of /home:         unknown
+  Memory usage:           35%
+  Swap usage:             0%
+  Processes:              7
+  Users logged in:        0
+  IPv4 address for wifi0: 192.168.0.4
+  IPv6 address for wifi0: 2600:8800:5e00:38f0:602c:5445:eb3c:d55
+  IPv6 address for wifi0: 2600:8800:5e00:38f0:7da3:8657:b88a:bf5
+
+168 updates can be installed immediately.
+75 of these updates are security updates.
+To see these additional updates run: apt list --upgradable
+
+
+
+This message is shown once once a day. To disable it please create the
+/home/dunham_j/.hushlogin file.
+dunham_j@DESKTOP-PCI6BIC:~$ ls
+ STC510          education_module2   educationtest.txt    log.csv            module2          typescript
+ education.txt   educationscript     educationtest2.txt  'log.tar.gz?dl=0'   module2_dunham   wget-log
+dunham_j@DESKTOP-PCI6BIC:~$ git clone https://github.com/J-Dunham2021/STC510.git
+fatal: destination path 'STC510' already exists and is not an empty directory.
+dunham_j@DESKTOP-PCI6BIC:~$ cd STC510
+dunham_j@DESKTOP-PCI6BIC:~/STC510$ ls
+LICENSE  README.md
+dunham_j@DESKTOP-PCI6BIC:~/STC510$ mv ../module2_dunham .
+dunham_j@DESKTOP-PCI6BIC:~/STC510$ ls
+LICENSE  README.md  module2_dunham
+dunham_j@DESKTOP-PCI6BIC:~/STC510$ mv ../educationtest2.txt .
+dunham_j@DESKTOP-PCI6BIC:~/STC510$ ls
+LICENSE  README.md  educationtest2.txt  module2_dunham
+dunham_j@DESKTOP-PCI6BIC:~/STC510$ head module2_dunham
+dunham_j@DESKTOP-PCI6BIC:~/STC510$ ls -l
+total 8
+-rw-r--r-- 1 dunham_j dunham_j 7048 Jan 31 23:31 LICENSE
+-rw-r--r-- 1 dunham_j dunham_j  150 Jan 31 23:31 README.md
+-rw-r--r-- 1 dunham_j dunham_j    0 Jan 31 22:39 educationtest2.txt
+-rw-r--r-- 1 dunham_j dunham_j    0 Jan 31 23:22 module2_dunham
+dunham_j@DESKTOP-PCI6BIC:~/STC510$ cd ..
+dunham_j@DESKTOP-PCI6BIC:~$ ls -l
+total 3272088
+drwxr-xr-x 1 dunham_j dunham_j       4096 Feb  1 13:25  STC510
+-rw-r--r-- 1 dunham_j dunham_j          0 Jan 31 22:31  education.txt
+-rw-r--r-- 1 dunham_j dunham_j          0 Jan 31 23:23  education_module2
+-rw-r--r-- 1 dunham_j dunham_j      28672 Jan 31 22:37  educationscript
+-rw-r--r-- 1 dunham_j dunham_j          0 Jan 31 22:36  educationtest.txt
+-rw-r--r-- 1 dunham_j dunham_j 2785518314 Jan  9  2018  log.csv
+-rw-r--r-- 1 dunham_j dunham_j  384564585 Jan 31 22:09 'log.tar.gz?dl=0'
+drwxr-xr-x 1 dunham_j dunham_j       4096 Jan 31 20:54  module2
+-rw-r--r-- 1 dunham_j dunham_j  180484566 Jan 31 22:31  typescript
+-rw-r--r-- 1 dunham_j dunham_j      13063 Jan 31 22:09  wget-log
+dunham_j@DESKTOP-PCI6BIC:~$ grep 'education\S[A-Z][a-z][0-9]\S.txt' log.csv
+dunham_j@DESKTOP-PCI6BIC:~$ grep 'education' log.csv > education_test
+dunham_j@DESKTOP-PCI6BIC:~$ head education_test
+1.202.140.ged,2017-06-27,01:34:47,0.0,886982.0,0000769993-17-000435,taleducation0gscototal.txt,200.0,5870.0,0.0,0.0,0.0,9.0,0.0,
+66.249.64.efi,2017-06-27,02:14:29,0.0,1585002.0,0001585002-14-000027,mhglobaleducationq32014f.htm,304.0,218.0,0.0,0.0,0.0,10.0,0.0,
+61.135.217.idh,2017-06-27,02:15:35,0.0,922475.0,0001213900-16-016519,xslF345X03/f4082916zhang_itteducational.,200.0,4073.0,0.0,0.0,0.0,10.0,0.0,
+66.249.64.dea,2017-06-27,03:29:47,0.0,1561880.0,0001213900-16-015821,f8k080816_legacyeducation.htm,200.0,2911.0,0.0,0.0,0.0,10.0,0.0,
+40.77.167.cdg,2017-06-27,03:31:10,0.0,922475.0,0001213900-16-015395,xslF345X03/f4072716zhang_itteducational.,200.0,3958.0,0.0,0.0,0.0,10.0,0.0,
+209.126.105.hhg,2017-06-27,03:43:53,0.0,922475.0,0001213900-16-015149,f4071816yude_itteducational.xml,200.0,7941.0,0.0,0.0,0.0,10.0,0.0,
+108.59.3.iee,2017-06-27,03:48:05,0.0,922475.0,0001213900-16-015149,f4071816yude_itteducational.xml,200.0,7929.0,0.0,0.0,0.0,10.0,0.0,
+86.131.30.fad,2017-06-27,04:28:07,0.0,1130713.0,0001130713-16-000102,ex991investoreducationsess.htm,200.0,182762.0,0.0,0.0,0.0,10.0,0.0,
+86.131.30.fad,2017-06-27,04:28:07,0.0,1130713.0,0001130713-16-000102,a8-kinvestoreducationsessi.htm,200.0,25528.0,0.0,0.0,0.0,10.0,0.0,
+66.249.64.cgg,2017-06-27,04:39:40,0.0,1585002.0,0001585002-14-000027,mhglobaleducationq32014f.htm,304.0,218.0,0.0,0.0,0.0,10.0,0.0,
+dunham_j@DESKTOP-PCI6BIC:~$ grep 'education\S*.txt' > dunham_education.txt
+^C
+dunham_j@DESKTOP-PCI6BIC:~$ grep 'education\S*.txt' log.csv > dunham_education.txt
+dunham_j@DESKTOP-PCI6BIC:~$ head dunham_education.txt
+1.202.140.ged,2017-06-27,01:34:47,0.0,886982.0,0000769993-17-000435,taleducation0gscototal.txt,200.0,5870.0,0.0,0.0,0.0,9.0,0.0,
+86.153.148.abf,2017-06-27,06:14:10,0.0,1046568.0,0001132625-10-000026,v13ga4careereducation.txt,200.0,5440.0,0.0,0.0,0.0,10.0,0.0,
+86.153.148.abf,2017-06-27,06:59:20,0.0,922475.0,0001086364-10-008787,itteducation012910.txt,200.0,5188.0,0.0,0.0,0.0,10.0,0.0,
+40.77.167.ifh,2017-06-27,07:03:14,0.0,1302343.0,0000869311-17-000385,education.realty.trust..txt,200.0,5145.0,0.0,0.0,0.0,10.0,0.0,
+86.153.148.abf,2017-06-27,07:44:03,0.0,895421.0,0000895421-10-000405,neworientaleducation1.txt,200.0,3800.0,0.0,0.0,0.0,10.0,0.0,
+86.153.148.abf,2017-06-27,08:21:58,0.0,895421.0,0000895421-10-000405,neworientaleducation1.txt,200.0,3800.0,0.0,0.0,0.0,10.0,0.0,
+180.165.168.jeh,2017-06-27,12:45:47,0.0,1364742.0,0000215457-17-003221,tal.education.group..txt,200.0,4925.0,0.0,0.0,0.0,10.0,0.0,
+180.165.168.jeh,2017-06-27,12:49:03,0.0,886982.0,0000769993-17-000435,taleducation0gscototal.txt,200.0,5870.0,0.0,0.0,0.0,10.0,0.0,
+199.192.67.ihd,2017-06-27,13:03:10,0.0,861177.0,0000861177-17-000012,new_oriental_education_tech.txt,200.0,11854.0,0.0,0.0,0.0,10.0,0.0,
+199.192.67.ihd,2017-06-27,13:15:16,0.0,1364742.0,0000215457-17-003221,tal.education.group..txt,200.0,11588.0,0.0,0.0,0.0,10.0,0.0,
+dunham_j@DESKTOP-PCI6BIC:~$ grep ',education\S*.txt' log.csv > dunham_education2.txt
+dunham_j@DESKTOP-PCI6BIC:~$ head dunham_education2.txt
+40.77.167.ifh,2017-06-27,07:03:14,0.0,1302343.0,0000869311-17-000385,education.realty.trust..txt,200.0,5145.0,0.0,0.0,0.0,10.0,0.0,
+86.153.148.abf,2017-06-27,23:54:09,0.0,1302343.0,0001390777-09-000029,educationrealty2008yebnymc.txt,200.0,7078.0,0.0,0.0,0.0,10.0,0.0,
